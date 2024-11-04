@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Sabor & Arte</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="/assets/Images/Lasanha.jpeg" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Restaurante Sabor &amp; Arte</h1>
+      <nav>
+        <ul>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <header>
+        <section id="menu" class="fade-in">
+          <h2>Nosso Menu</h2>
+          <ul>
+            <li>
+              <img src="/assets/Images/Risoto.jpeg" width="350" height="250" />
+              <p>Risoto de Frutos do Mar - R$ 45,00</p>
+            </li>
+            <li>
+              <img src="/assets/Images/Lasanha.jpeg" width="350" height="250" />
+              <p>Lasanha Vegetariana - R$ 35,00</p>
+            </li>
+            <li>
+              <img src="/assets/Images/picanha.jpg" width="350" height="250" />
+              <p>Picanha na Brasa R$60,000</p>
+            </li>
+            <li>
+              <img src="/assets/Images/torta.jfif" width="350" height="250" />
+              <p>Torta de Limão - R$ 15,00</p>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <section id="reservas" class="fade-in">
+        <h2>Reservas</h2>
+        <form id="reservas-form">
+          <label for="nome-reserva">Nome:</label>
+          <input type="text" id="nome-reserva" required="" />
+
+          <label for="data">Data:</label>
+          <input type="date" id="data" required="" />
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" required="" />
+
+          <label for="pessoas">Número de Pessoas:</label>
+          <input type="number" id="pessoas" required="" min="1" />
+
+          <button type="submit">Reservar Mesa</button>
+        </form>
+        <div id="reserva-confirmada" class="hidden">
+          Reserva confirmada com sucesso!
+        </div>
+      </section>
+
+      <section id="contato" class="fade-in">
+        <h2>Contato</h2>
+        <form id="contato-form">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required="" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required="" />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" required=""></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="mensagem-enviada" class="hidden">
+          Mensagem enviada com sucesso!
+        </div>
+      </section>
+      <section id="historia" class="fade-in">
+        <h2>A História de Arthur e Kauê</h2>
+        <p>
+          Arthur e Kauê, amigos de infância apaixonados pela culinária,
+          decidiram abrir o Restaurante Arthur & Kauê após anos de experiência
+          em renomados estabelecimentos. O restaurante, um espaço acolhedor que
+          reflete suas histórias e tradições familiares, oferece um cardápio
+          repleto de pratos que contam narrativas, como a lasanha da avó de
+          Arthur e o risoto de cogumelos de Kauê. Com ingredientes frescos e
+          parcerias com produtores locais, o restaurante se tornou um local onde
+          as pessoas se reúnem para celebrar a vida, compartilhar risadas e
+          criar novas memórias à mesa, transformando cada refeição em uma
+          experiência única de amor e amizade.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Restaurante Sabor &amp; Arte. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
